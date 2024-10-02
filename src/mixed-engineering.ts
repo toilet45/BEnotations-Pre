@@ -15,7 +15,7 @@ export class MixedEngineeringNotation extends Notation {
       return standard.formatDecimal(value, places, placesExponent);
     }
     return formatMantissaWithExponent(formatMantissaBaseTen, this.formatExponent.bind(this),
-      10, 3, (x, _) => formatMantissaBaseTen(x, 0)
+      10, 3, (x, _) => formatMantissaBaseTen(x, 2)
     )(value, places, placesExponent);
   }
 }
