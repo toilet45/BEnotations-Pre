@@ -125,7 +125,7 @@ const STANDARD_PREFIXES = [
   ["", "Ce", "Dn", "Tc", "Qe", "Qu", "Sc", "Si", "Oe", "Ne"]
 ];
 
-const STANDARD_PREFIXES_2 = ["", "MI-", "MC-", "NA-", "PC-", "FM-", "AT-", "ZP-"];
+const STANDARD_PREFIXES_2 = ["", "MI-", "MC-", "NA-", "PC-", "FM-", "AT-", "ZP-", "YT-", "RN-", "QC-"];
 
 // This is still considered high complexity, but it's a lot simpler than
 // the mess that was here before.
