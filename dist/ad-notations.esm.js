@@ -267,7 +267,7 @@ var ScientificNotation = function (_super) {
 
   ScientificNotation.prototype.formatDecimal = function (value, places, placesExponent) {
     return formatMantissaWithExponent(formatMantissaBaseTen, this.formatExponent.bind(this), 10, 1, function (x, _) {
-      return formatMantissaBaseTen(x, 2);
+      return formatMantissaBaseTen(x, 0);
     })(value, places, placesExponent);
   };
 
@@ -291,7 +291,7 @@ var EngineeringNotation = function (_super) {
 
   EngineeringNotation.prototype.formatDecimal = function (value, places, placesExponent) {
     return formatMantissaWithExponent(formatMantissaBaseTen, this.formatExponent.bind(this), 10, 3, function (x, _) {
-      return formatMantissaBaseTen(x, 2);
+      return formatMantissaBaseTen(x, 0);
     })(value, places, placesExponent);
   };
 
@@ -443,7 +443,7 @@ var MixedScientificNotation = function (_super) {
     }
 
     return formatMantissaWithExponent(formatMantissaBaseTen, this.formatExponent.bind(this), 10, 1, function (x, _) {
-      return formatMantissaBaseTen(x, 2);
+      return formatMantissaBaseTen(x, 0);
     })(value, places, placesExponent);
   };
 
@@ -473,7 +473,7 @@ var MixedEngineeringNotation = function (_super) {
     }
 
     return formatMantissaWithExponent(formatMantissaBaseTen, this.formatExponent.bind(this), 10, 3, function (x, _) {
-      return formatMantissaBaseTen(x, 2);
+      return formatMantissaBaseTen(x, 0);
     })(value, places, placesExponent);
   };
 
